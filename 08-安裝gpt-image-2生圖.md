@@ -322,7 +322,7 @@ python <SKILL路徑>/draw.py "一隻可愛的黑貓，扁平插畫風格" --name
 > 以後在任何專案裡，對我說「畫一張 XX」就能生圖。
 >
 > - 預設存在 `slides/generated/` 或 `./generated/`
-> - 每張約 NT$0.3（low 品質）
+> - 實際費用以 OpenAI 官方 pricing 為準；預設使用 low 品質控制成本
 > - 生圖模型：gpt-image-2（OpenAI 最新）
 >
 > 想看實戰應用？請看 EP12：gpt-image-2 的三大教學應用

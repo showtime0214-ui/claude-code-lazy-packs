@@ -25,9 +25,9 @@ echo "OPENAI_API_KEY=sk-proj-你的key" > ~/.openai.env
 
 ### 3. 安裝 draw skill
 ```bash
-npx skills add mathruffian-dot/opencode-lazy-packs --skill 08-draw -g -y
+npx skills add mathruffian-dot/claude-code-lazy-packs --skill 09-draw -g -y
 ```
-或從本機 Claude Code skills 目錄複製（若已存在 `~/.claude/skills/draw/`）
+確認 `~/.claude/skills/draw/draw.py` 或 `~/.claude/skills/09-draw/draw.py` 存在；不要從 OpenCode 的 `~/.config/opencode/skills/` 混用。
 
 ### 4. 測試
 ```bash
@@ -35,11 +35,13 @@ python ~/.claude/skills/draw/draw.py "一隻橘貓坐在窗邊，水彩風格" -
 ```
 
 ## 品質與費用
-| 等級 | 費用 | 適用 |
-|------|------|------|
-| low | ~NT$0.3 | 99% 情境（預設）|
-| medium | ~NT$1.3 | 不用 |
-| high | ~NT$5.5 | 印刷品 |
+| 等級 | 適用 |
+|------|------|
+| low | 99% 情境（預設）|
+| medium | low 明顯不夠時 |
+| high | 印刷品 |
+
+實際費用以 OpenAI 官方 pricing 為準，不在 skill 裡寫死金額。
 
 安裝後在任何專案對 Claude 說「畫一張 XX」就會自動生圖。
 
